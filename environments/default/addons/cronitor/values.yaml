@@ -1,0 +1,3 @@
+credentials:
+  secretName: cronitor-secret
+  secretKey: CRONITOR_API_KEY
