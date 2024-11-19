@@ -80,6 +80,10 @@ configs:
       url: https://helm.datadoghq.com
       name: datadog
       type: helm
+    cronitor:
+      url: https://cronitorio.github.io/cronitor-kubernetes
+      name: cronitor
+      type: helm
 
   rbac:
     policy.default: "role:dev"
