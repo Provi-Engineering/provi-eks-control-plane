@@ -98,7 +98,7 @@ configs:
       p, role:dev, exec, create, default/*, allow
       p, role:dev, certificates, get, default/*, allow
       p, role:dev, clusters, get, default/*, allow
-      p, role:dev, repositories, get, default/*, allow
+      p, role:dev, repositories, get, *, allow
       p, role:dev, projects, get, default/*, allow
       p, role:dev, accounts, get, default/*, allow
       p, role:dev, gpgkeys, get, default/*, allow
