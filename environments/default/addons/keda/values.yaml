@@ -1,1 +1,6 @@
-# Helm chart values
+---
+operator:
+  additionalClusterRoleRules:
+    - apiGroups: [""]
+      resources: ["secrets"]
+      verbs: ["get"]
