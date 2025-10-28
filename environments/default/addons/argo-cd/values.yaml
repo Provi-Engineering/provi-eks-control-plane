@@ -84,6 +84,10 @@ configs:
       url: https://cronitorio.github.io/cronitor-kubernetes
       name: cronitor
       type: helm
+    community-charts:
+      url: https://community-charts.github.io/helm-charts
+      name: community-charts
+      type: helm
 
   rbac:
     policy.default: "role:dev"
