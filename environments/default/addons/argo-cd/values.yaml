@@ -64,29 +64,33 @@ configs:
       type: helm
       url: public.ecr.aws
       enableOCI: 'true'
-    provi-helm-charts:
-      url: https://provi-engineering.github.io/helm-charts
-      name: provi-helm-charts
-      type: helm
-    keda-core:
-      url: https://kedacore.github.io/charts
-      name: kedacore
-      type: helm
-    sumologic:
-      url: https://sumologic.github.io/sumologic-kubernetes-collection
-      name: sumologic
-      type: helm
-    datadog:
-      url: https://helm.datadoghq.com
-      name: datadog
+    community-charts:
+      url: https://community-charts.github.io/helm-charts
+      name: community-charts
       type: helm
     cronitor:
       url: https://cronitorio.github.io/cronitor-kubernetes
       name: cronitor
       type: helm
-    community-charts:
-      url: https://community-charts.github.io/helm-charts
-      name: community-charts
+    datadog:
+      url: https://helm.datadoghq.com
+      name: datadog
+      type: helm
+    keda-core:
+      url: https://kedacore.github.io/charts
+      name: kedacore
+      type: helm
+    perfectscale:
+      url: https://perfectscale-io.github.io
+      name: perfectscale
+      type: helm
+    provi-helm-charts:
+      url: https://provi-engineering.github.io/helm-charts
+      name: provi-helm-charts
+      type: helm
+    sumologic:
+      url: https://sumologic.github.io/sumologic-kubernetes-collection
+      name: sumologic
       type: helm
 
   rbac:
