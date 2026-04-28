@@ -105,3 +105,9 @@ spec:
         syncOptions:
           - CreateNamespace=true
           - ServerSideApply=true  # Big CRDs.
+      # apiserver fills nodePort on LB Services; chart manifest omits them → perpetual OutOfSync
+      ignoreDifferences:
+        - group: ""
+          kind: Service
+          jqPathExpressions:
+            - .spec.ports[].nodePort
