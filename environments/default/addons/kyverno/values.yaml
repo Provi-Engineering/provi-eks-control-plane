@@ -5,6 +5,23 @@ crds:
   migration:
     enabled: false
 
+# Chart 3.1.x only: post-upgrade hook + CronJobs used docker.io/bitnami/kubectl:1.28.5 (tag removed).
+# If Argo is still on 3.1.x briefly, these prevent those pulls. Chart 3.6.x ignores these keys.
+policyReportsCleanup:
+  enabled: false
+
+cleanupJobs:
+  admissionReports:
+    enabled: false
+  clusterAdmissionReports:
+    enabled: false
+
+webhooksCleanup:
+  image:
+    registry: registry.k8s.io
+    repository: kubectl
+    tag: v1.34.3
+
 admissionController:
   replicas: 3
 
